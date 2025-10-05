@@ -1,0 +1,493 @@
+<?php
+/*
+Theme Name: Talles Cattarin
+Theme URI: https://talles-cattarin.com
+Author: Talles
+Description: The best musician out there
+Version: 1.0
+*/
+?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
+  <head>
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><?php bloginfo('name'); ?></title>
+    <meta name="description" content="Rock musician and producer offering professional mixing, mastering, YouTube covers, and streaming distribution. Transform your music with expert sound engineering." />
+    <meta name="author" content="Talles Cattarin" />
+
+    <meta property="og:title" content="Talles Cattarin - Music Producer & Sound Engineer" />
+    <meta property="og:description" content="Professional mixing, mastering, and music production services for rock and acoustic artists" />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.svg">
+    <link rel="alternate icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <?php wp_head(); ?>
+  </head>
+  <body <?php body_class(); ?>>
+    <div class="font-brand min-h-screen bg-zinc-950 text-white">
+      <div class="z-10 animate-spin [animation-duration:15s] hidden relative mx-auto lg:flex h-max w-max items-center justify-center opacity-50 blur-[150px] filter">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="absolute h-[40rem] w-[40rem] rounded-full bg-rose-600" style="transform:translate(-10%, 0);">
+          </div>
+          <div class="absolute h-[40rem] w-[40rem] rounded-full bg-rose-700" style="transform:translate(10%, -35%);">
+          </div>
+          <div class="absolute h-[40rem] w-[40rem] rounded-full bg-rose-800" style="transform:translate(10%, 35%);">
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <section
+        class="relative min-h-screen flex items-center justify-center overflow-hidden"
+        style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/herobg.jpg'); background-size: cover; background-position: center;"
+      >
+        <div class="absolute inset-0 bg-zinc-950/90"></div>
+
+        <div class="container mx-auto px-4 z-10 text-center">
+          <h1 class="font-bold mb-6">
+            <span class="text-5xl md:text-7xl">TALLES CATTARIN</span>
+            <br>
+            <span class="text-3xl md:text-4xl">Music Producer & Sound Engineer</span>
+          </h1>
+          <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+            Crafting sonic experiences that move hearts and shake souls
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#contact" class="text-base px-4 py-3 bg-rose-500 rounded-md text-white hover:brightness-120 hover:shadow-[var(--shadow-glow)] transition-[var(--transition-smooth)]">
+              Get a Quote
+            </a>
+            <a href="#projects" class="text-base px-4 py-3 border border-zinc-800 bg-zinc-900 hover:bg-zinc-800/70 rounded-md">
+              Listen to My Work
+            </a>
+          </div>
+        </div>
+
+        <!-- Arrow Down -->
+        <div
+          id="toggleIcon"
+          class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce p-1.5 text-rose-500 bg-zinc-900 rounded-full border border-zinc-800 flex items-center justify-center"
+        >
+          <svg
+            id="arrowIcon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+            />
+          </svg>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="pt-6 lg:pt-0 lg:h-[564px] flex flex-col lg:flex-row bg-zinc-900/25">
+        <div class="px-6 py-6 lg:px-18 xl:px-36 lg:py-0 flex flex-col justify-center lg:w-3/5">
+          <!-- Red Dash -->
+          <div class="bg-red-500 h-2 w-20 rounded-xs"></div>
+          
+          <p class="pt-3 sm:pt-2 pb-4 text-2xl lg:text-4xl text-white leading-relaxed">
+            I'm <span class="font-bold">Talles Cattarin</span>, a music producer dedicated to creating
+            <span class="font-bold">powerful</span>, <span class="font-bold">high-quality</span> sound through modern mixing and mastering.
+          </p>
+
+          <!-- Socials -->
+          <div class="flex flex-wrap gap-4 items-center py-4 justify-center sm:justify-start">
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com/tallescattarin"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white hover:text-[#FF0069] transition-colors"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <title>Instagram</title>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+              </svg>
+            </a>
+
+            <!-- Youtube -->
+            <a
+              href="https://www.youtube.com/@tallescattarin?sub_confirmation=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white hover:text-[#FF0000] transition-colors"
+            >
+              <svg role="img" width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>YouTube</title>
+                <path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+
+            <!-- Youtube Music -->
+            <a
+              href="https://music.youtube.com/channel/UCsBFSXfuJxWPJjCHImM_Jsw"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white hover:text-[#FF0000] transition-colors"
+            >
+              <svg role="img" width="26" height="26" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>YouTube Music</title>
+                <path fill="currentColor" d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm0 19.104c-3.924 0-7.104-3.18-7.104-7.104S8.076 4.896 12 4.896s7.104 3.18 7.104 7.104-3.18 7.104-7.104 7.104zm0-13.332c-3.432 0-6.228 2.796-6.228 6.228S8.568 18.228 12 18.228s6.228-2.796 6.228-6.228S15.432 5.772 12 5.772zM9.684 15.54V8.46L15.816 12l-6.132 3.54z"/>
+              </svg>
+            </a>
+            
+            <!-- Spotify -->
+            <a
+              href="https://open.spotify.com/artist/77SAbQybNSZmuluK93v8AO"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white hover:text-[#1ED760] transition-colors"
+            >
+              <svg role="img" width="26" height="26" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Spotify</title>
+                <path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+              </svg>
+            </a>
+
+            <!-- Apple Music -->
+            <a
+              href="https://music.apple.com/br/artist/talles-cattarin/1510095525"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white hover:text-[#FA243C] transition-colors"
+            >
+              <svg role="img" width="26" height="26" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Apple Music</title>
+                <path fill="currentColor" d="M23.994 6.124a9.23 9.23 0 00-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 00-1.877-.726 10.496 10.496 0 00-1.564-.15c-.04-.003-.083-.01-.124-.013H5.986c-.152.01-.303.017-.455.026-.747.043-1.49.123-2.193.4-1.336.53-2.3 1.452-2.865 2.78-.192.448-.292.925-.363 1.408-.056.392-.088.785-.1 1.18 0 .032-.007.062-.01.093v12.223c.01.14.017.283.027.424.05.815.154 1.624.497 2.373.65 1.42 1.738 2.353 3.234 2.801.42.127.856.187 1.293.228.555.053 1.11.06 1.667.06h11.03a12.5 12.5 0 001.57-.1c.822-.106 1.596-.35 2.295-.81a5.046 5.046 0 001.88-2.207c.186-.42.293-.87.37-1.324.113-.675.138-1.358.137-2.04-.002-3.8 0-7.595-.003-11.393zm-6.423 3.99v5.712c0 .417-.058.827-.244 1.206-.29.59-.76.962-1.388 1.14-.35.1-.706.157-1.07.173-.95.045-1.773-.6-1.943-1.536a1.88 1.88 0 011.038-2.022c.323-.16.67-.25 1.018-.324.378-.082.758-.153 1.134-.24.274-.063.457-.23.51-.516a.904.904 0 00.02-.193c0-1.815 0-3.63-.002-5.443a.725.725 0 00-.026-.185c-.04-.15-.15-.243-.304-.234-.16.01-.318.035-.475.066-.76.15-1.52.303-2.28.456l-2.325.47-1.374.278c-.016.003-.032.01-.048.013-.277.077-.377.203-.39.49-.002.042 0 .086 0 .13-.002 2.602 0 5.204-.003 7.805 0 .42-.047.836-.215 1.227-.278.64-.77 1.04-1.434 1.233-.35.1-.71.16-1.075.172-.96.036-1.755-.6-1.92-1.544-.14-.812.23-1.685 1.154-2.075.357-.15.73-.232 1.108-.31.287-.06.575-.116.86-.177.383-.083.583-.323.6-.714v-.15c0-2.96 0-5.922.002-8.882 0-.123.013-.25.042-.37.07-.285.273-.448.546-.518.255-.066.515-.112.774-.165.733-.15 1.466-.296 2.2-.444l2.27-.46c.67-.134 1.34-.27 2.01-.403.22-.043.442-.088.663-.106.31-.025.523.17.554.482.008.073.012.148.012.223.002 1.91.002 3.822 0 5.732z"/>
+              </svg>
+            </a>
+
+            <!-- Deezer -->
+            <a
+              href="https://www.deezer.com/br/artist/93422732"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white hover:text-[#A238FF] transition-colors"
+            >
+              <svg role="img" width="25" height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>Deezer</title>
+                <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M41.0955 7.32313C41.5396 4.74914 42.1912 3.13054 42.913 3.12744H42.9146C44.2606 3.13208 45.3517 8.7454 45.3517 15.6759C45.3517 22.6063 44.259 28.2243 42.9115 28.2243C42.3591 28.2243 41.8494 27.2704 41.4389 25.6719C40.7903 31.5233 39.4443 35.5459 37.8862 35.5459C36.6806 35.5459 35.5986 33.1296 34.8722 29.3188C34.3762 36.5662 33.1279 41.708 31.6689 41.708C30.7533 41.708 29.9185 39.6705 29.3005 36.3529C28.5573 43.2014 26.8405 48 24.8382 48C22.836 48 21.1162 43.2029 20.376 36.3529C19.7625 39.6705 18.9278 41.708 18.0075 41.708C16.5486 41.708 15.3033 36.5662 14.8043 29.3188C14.0779 33.1296 12.999 35.5459 11.7903 35.5459C10.2337 35.5459 8.88621 31.5249 8.23763 25.6719C7.83017 27.2751 7.31741 28.2243 6.76497 28.2243C5.41745 28.2243 4.32478 22.6063 4.32478 15.6759C4.32478 8.7454 5.41745 3.12744 6.76497 3.12744C7.48833 3.12744 8.13538 4.75068 8.58405 7.32313C9.30283 2.88473 10.4703 0 11.7903 0C13.3576 0 14.7158 4.07975 15.3583 10.0038C15.987 5.69216 16.9408 2.94348 18.0091 2.94348C19.5061 2.94348 20.7789 8.34964 21.2505 15.8908C22.1371 12.0243 23.4205 9.59876 24.8413 9.59876C26.2621 9.59876 27.5455 12.0259 28.4306 15.8908C28.9037 8.34964 30.1749 2.94348 31.672 2.94348C32.7387 2.94348 33.691 5.69216 34.3228 10.0038C34.9637 4.07975 36.3219 0 37.8892 0C39.2047 0 40.3767 2.88628 41.0955 7.32313ZM0.837891 14.4417C0.837891 11.3436 1.45748 8.83142 2.22204 8.83142C2.9866 8.83142 3.60619 11.3436 3.60619 14.4417C3.60619 17.5397 2.9866 20.0519 2.22204 20.0519C1.45748 20.0519 0.837891 17.5397 0.837891 14.4417ZM46.0693 14.4417C46.0693 11.3436 46.6888 8.83142 47.4534 8.83142C48.218 8.83142 48.8376 11.3436 48.8376 14.4417C48.8376 17.5397 48.218 20.0519 47.4534 20.0519C46.6888 20.0519 46.0693 17.5397 46.0693 14.4417Z" />
+              </svg>
+            </a>
+
+            <!-- Amazon Music -->
+            <a
+              href="https://music.amazon.de/artists/B0881KN65C/talles-cattarin"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white hover:text-[#0C6CB3] transition-colors"
+            >
+              <svg role="img" width="30" height="30" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px">
+                <title>Amazon Music</title>
+                <path fill="currentColor" d="M36,5H14c-4.971,0-9,4.029-9,9v22c0,4.971,4.029,9,9,9h22c4.971,0,9-4.029,9-9V14C45,9.029,40.971,5,36,5z M38.19,21.254	c0.65-0.279,1.42-0.317,2.07-0.121c0.27,0.084,0.51,0.196,0.74,0.335v1.23c-0.72-0.494-1.55-0.634-2.19-0.289	c-0.68,0.373-1.08,1.155-1.06,1.975c-0.01,0.904,0.29,1.742,0.92,2.133c0.56,0.382,1.44,0.382,2.33,0.242v1.025	c-0.35,0.112-0.72,0.177-1.1,0.214c-0.63,0.047-1.33-0.047-1.95-0.382c-0.63-0.326-1.09-0.894-1.35-1.463	c-0.25-0.587-0.34-1.183-0.35-1.752C36.22,23.191,36.87,21.831,38.19,21.254z M34,18.01c0.552,0,1,0.448,1,1s-0.448,1-1,1	s-1-0.448-1-1S33.448,18.01,34,18.01z M34.75,21.01v7h-1.5v-7H34.75z M27,26.175c0.64,0.261,1.42,0.532,2.03,0.59	c0.61,0.068,1.28-0.01,1.67-0.223c0.19-0.116,0.23-0.278,0.23-0.458s-0.036-0.282-0.123-0.417c-0.159-0.246-0.597-0.432-1.287-0.597	c-0.34-0.097-0.71-0.194-1.12-0.416c-0.41-0.184-1.243-0.852-1.081-1.991c0.087-0.609,0.718-1.205,1.601-1.483	c1.029-0.325,2.15-0.164,3.08,0.281V22.7c-0.83-0.426-1.82-0.641-2.66-0.361c-0.25,0.077-0.58,0.251-0.58,0.564	c0,0.751,0.87,0.893,1.2,1c0.34,0.106,0.71,0.203,1.11,0.406c0.4,0.194,1.202,0.678,1.202,1.783c0,1.058-0.522,1.447-0.952,1.621	c-0.89,0.387-1.68,0.319-2.45,0.213c-0.65-0.116-1.28-0.31-1.87-0.677C27,27.249,27,26.175,27,26.175z M20.25,21.012l1.5-0.002	l0.003,2.42c0.014,0.79,0.012,1.651,0.003,2.383c-0.035,0.391,0.402,0.847,0.976,0.917c0.306,0.034,0.534,0.009,0.886-0.14	c0.208-0.082,0.42-0.152,0.632-0.225V21.01l1.5,0.001v6.818h-1.5v-0.236c-0.041,0.022-0.08,0.046-0.12,0.067	c-0.381,0.228-0.992,0.386-1.514,0.343c-0.542-0.035-1.088-0.225-1.533-0.586c-0.442-0.356-0.776-0.915-0.819-1.529	c-0.027-0.88-0.02-1.634-0.011-2.457L20.25,21.012z M9.25,21.01h1.5v0.688c0.37-0.134,0.737-0.274,1.109-0.401	c0.535-0.19,1.206-0.152,1.733,0.141c0.218,0.117,0.409,0.282,0.577,0.469c0.562-0.208,1.123-0.417,1.689-0.611	c0.535-0.19,1.206-0.152,1.733,0.141c0.532,0.286,0.946,0.809,1.093,1.418c0.039,0.152,0.056,0.306,0.065,0.461l0.004,0.317	l0.006,0.625l-0.006,1.25l-0.003,2.5h-1.5l-0.006-4.844c-0.042-0.425-0.519-0.797-1.019-0.661c-0.51,0.135-1.024,0.255-1.537,0.379	c0.034,0.143,0.052,0.287,0.061,0.433l0.004,0.317l0.006,0.625l-0.006,1.25l-0.003,2.5h-1.5l-0.006-4.844	c-0.042-0.426-0.519-0.797-1.019-0.661c-0.489,0.13-0.983,0.245-1.475,0.364v5.14h-1.5C9.25,28.006,9.25,21.01,9.25,21.01z M38.768,33.932c-2.214,1.57-4.688,2.605-7.285,3.277c-2.595,0.663-5.297,0.914-7.986,0.729c-2.688-0.18-5.313-0.836-7.787-1.794	c-2.466-0.99-4.797-2.263-6.857-3.931c-0.107-0.087-0.124-0.245-0.037-0.352c0.077-0.095,0.209-0.119,0.313-0.063l0.014,0.008	c2.249,1.217,4.653,2.149,7.067,2.889c2.433,0.692,4.909,1.187,7.4,1.288c2.485,0.087,4.997-0.107,7.449-0.617	c2.442-0.504,4.905-1.236,7.17-2.279l0.039-0.018c0.251-0.115,0.547-0.006,0.663,0.245C39.035,33.537,38.961,33.796,38.768,33.932z M39.882,36.892c-0.278,0.21-0.556,0.14-0.417-0.21c0.417-1.12,1.32-3.501,0.903-4.061c-0.486-0.63-2.987-0.28-4.098-0.14	c-0.347,0-0.347-0.28-0.069-0.49c0.972-0.7,2.292-0.98,3.404-0.98c1.111,0,2.084,0.21,2.292,0.56	C42.243,31.99,41.757,35.281,39.882,36.892z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <img class="h-96 lg:h-full lg:w-2/5 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/images/talles-ig.jpg" alt="Artist picture" />
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-32 px-4">
+        <div class="container mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center">
+            Services
+          </h2>
+          <p class="text-center mb-12 text-lg">
+            I’ll shape your music into an immersive, polished, and emotionally powerful experience.
+          </p>
+          
+          <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div 
+              class="p-8 rounded-lg bg-zinc-900/70 border border-zinc-800 hover:shadow-[var(--shadow-glow)] transition-[var(--transition-smooth)] hover:scale-105"
+            >
+              <div>
+                <div class="mb-4 text-rose-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z" />
+                  </svg>
+                </div>
+                <h2 class="text-2xl">
+                  Professional Mixing
+                </h2>
+              </div>
+              <div class="pt-2">
+                <div class="text-base">
+                  I transform your raw tracks into a cohesive and impactful sound, ensuring every instrument and vocal shines in the right place.
+                </div>
+              </div>
+            </div>
+            <div 
+              class="p-8 rounded-lg bg-zinc-900/70 border border-zinc-800 hover:shadow-[var(--shadow-glow)] transition-[var(--transition-smooth)] hover:scale-105"
+            >
+              <div>
+                <div class="mb-4 text-rose-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z" />
+                  </svg>
+                </div>
+                <h2 class="text-2xl">
+                  High-Quality Mastering
+                </h2>
+              </div>
+              <div class="pt-2">
+                <div class="text-base">
+                  Mastering gives your music its final polish, enhancing clarity, balance, and loudness so it sounds professional on any platform.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="py-20 px-4 bg-zinc-900/30">
+        <div class="container mx-auto max-w-5xl">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center">
+            Projects
+          </h2>
+          <p class="text-center mb-12 text-lg">
+            Discover how quality mixing and mastering can make a difference.
+          </p>
+
+          <iframe
+            data-testid="embed-spotify-iframe"
+            style="border-radius:12px"
+            src="https://open.spotify.com/embed/artist/77SAbQybNSZmuluK93v8AO?utm_source=generator&theme=0"
+            width="100%"
+            height="352"
+            frameBorder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+
+          <div class="text-center mt-12">
+            <a href="#contact" class="px-4 py-3 rounded-lg bg-rose-500 hover:brightness-120 hover:shadow-[var(--shadow-glow)] transition-[var(--transition-smooth)]">
+              Ready to Transform Your Music?
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section id="reach" class="py-28 px-4">
+        <div class="container mx-auto max-w-5xl">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center">
+            Reach
+          </h2>
+          <p class="text-center mb-12 text-lg">
+            My music has reached listeners all around the world.
+          </p>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Youtube Views -->
+            <div 
+              class="border border-zinc-800 bg-zinc-900/40 rounded-lg p-6 text-center hover:shadow-[var(--shadow-glow)] transition-[var(--transition-smooth)]"
+            >
+              <div class="flex justify-center mb-3 text-rose-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube-icon lucide-youtube">
+                  <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/>
+                  <path d="m10 15 5-3-5-3z"/>
+                </svg>
+              </div>
+              <div class="text-3xl font-bold mb-2">
+                350K+
+              </div>
+              <div class="text-sm">
+                Views
+              </div>
+            </div>
+
+            <div 
+              class="border border-zinc-800 bg-zinc-900/40 rounded-lg p-6 text-center hover:shadow-[var(--shadow-glow)] transition-[var(--transition-smooth)]"
+            >
+              <div class="flex justify-center mb-3 text-rose-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+              </div>
+              <div class="text-3xl font-bold mb-2">
+                35K+
+              </div>
+              <div class="text-sm">
+                Likes
+              </div>
+            </div>
+
+            <div 
+              class="border border-zinc-800 bg-zinc-900/40 rounded-lg p-6 text-center hover:shadow-[var(--shadow-glow)] transition-[var(--transition-smooth)]"
+            >
+              <div class="flex justify-center mb-3 text-rose-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-icon lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
+              </div>
+              <div class="text-3xl font-bold mb-2">
+                20K+
+              </div>
+              <div class="text-sm">
+                Interactions
+              </div>
+            </div>
+
+            <div 
+              class="border border-zinc-800 bg-zinc-900/40 rounded-lg p-6 text-center hover:shadow-[var(--shadow-glow)] transition-[var(--transition-smooth)]"
+            >
+              <!-- style={{ animationDelay: `${index * 0.1}s` }} -->
+              <div class="flex justify-center mb-3 text-rose-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones-icon lucide-headphones"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></svg>
+              </div>
+              <div class="text-3xl font-bold mb-2">
+                2.5K+
+              </div>
+              <div class="text-sm">
+                Spotify Monthly Listeners
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-32 px-4 bg-zinc-900/35">
+        <div class="container mx-auto max-w-3xl text-center">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-clip-text bg-gradient-to-r from-primary to-accent">
+            Contact
+          </h2>
+
+          <p class="text-lg mb-8">
+            To request a quote or ask questions, reach out directly via Instagram, Whatsapp or e-mail.
+            Let’s work together to make your ideas sound their best!
+          </p>
+
+          <div class="flex flex-col flex-wrap sm:flex-row justify-center items-center gap-4">
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com/tallescattarin"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex justify-center items-center gap-2 px-4 py-3 text-base font-semibold text-white rounded-lg bg-gradient-to-r from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] shadow-md hover:brightness-120 transition"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+              </svg>
+              Connect on Instagram
+            </a>
+
+            <!-- Whatsapp -->
+            <a
+              href="https://api.whatsapp.com/send/?phone=5541998027818&text=Hi%20Talles%2C%20I%20found%20you%20on%20your%20website%20and%20I%27m%20interested%20in%20learning%20more%20about%20your%20services.&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex justify-center items-center gap-2 px-4 py-3 text-base font-semibold text-white min-w-36 rounded-lg border border-zinc-800 bg-zinc-900 hover:brightness-120 transition"
+            >
+              <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 48L3.374 35.674C1.292 32.066 0.198 27.976 0.2 23.782C0.206 10.67 10.876 0 23.986 0C30.348 0.002 36.32 2.48 40.812 6.976C45.302 11.472 47.774 17.448 47.772 23.804C47.766 36.918 37.096 47.588 23.986 47.588C20.006 47.586 16.084 46.588 12.61 44.692L0 48ZM13.194 40.386C16.546 42.376 19.746 43.568 23.978 43.57C34.874 43.57 43.75 34.702 43.756 23.8C43.76 12.876 34.926 4.02 23.994 4.016C13.09 4.016 4.22 12.884 4.216 23.784C4.214 28.234 5.518 31.566 7.708 35.052L5.71 42.348L13.194 40.386ZM35.968 29.458C35.82 29.21 35.424 29.062 34.828 28.764C34.234 28.466 31.312 27.028 30.766 26.83C30.222 26.632 29.826 26.532 29.428 27.128C29.032 27.722 27.892 29.062 27.546 29.458C27.2 29.854 26.852 29.904 26.258 29.606C25.664 29.308 23.748 28.682 21.478 26.656C19.712 25.08 18.518 23.134 18.172 22.538C17.826 21.944 18.136 21.622 18.432 21.326C18.7 21.06 19.026 20.632 19.324 20.284C19.626 19.94 19.724 19.692 19.924 19.294C20.122 18.898 20.024 18.55 19.874 18.252C19.724 17.956 18.536 15.03 18.042 13.84C17.558 12.682 17.068 12.838 16.704 12.82L15.564 12.8C15.168 12.8 14.524 12.948 13.98 13.544C13.436 14.14 11.9 15.576 11.9 18.502C11.9 21.428 14.03 24.254 14.326 24.65C14.624 25.046 18.516 31.05 24.478 33.624C25.896 34.236 27.004 34.602 27.866 34.876C29.29 35.328 30.586 35.264 31.61 35.112C32.752 34.942 35.126 33.674 35.622 32.286C36.118 30.896 36.118 29.706 35.968 29.458Z" fill="#FFF"/>
+              </svg>
+              Whatsapp
+            </a>
+
+            <!-- E-mail -->
+            <a
+              href="mailto:talles2_cattarin2@outlook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex justify-center items-center gap-2 px-4 py-3 text-base font-semibold text-white min-w-36 rounded-lg border border-zinc-800 bg-zinc-900 hover:brightness-120 transition"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail">
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/>
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+              </svg>
+              E-mail
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Support Section -->
+      <section id="support" class="py-32 px-4 bg-zinc-950">
+        <div class="container mx-auto max-w-3xl text-center">
+          <!-- Heart Icon -->
+          <div class="flex justify-center mb-6 text-rose-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+            </svg>
+          </div>
+
+          <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-clip-text bg-gradient-to-r from-primary to-accent">
+            Support My Work
+          </h2>
+
+          <p class="text-lg mb-8">
+            If you enjoy my work and would like to support my musical journey, consider making a donation.
+            Your contribution helps me continue producing quality content and investing in new creative projects.
+          </p>
+
+
+          <div class="flex flex-wrap justify-center gap-2">
+            <a
+              href="https://www.paypal.com/donate/?hosted_button_id=7N38B2WJJ9WHC"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-3 text-base font-semibold text-white rounded-xl bg-[#002991] hover:brightness-110 transition"
+            >
+              <svg class="size-6" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>PayPal</title>
+                <path fill="white" d="M15.607 4.653H8.941L6.645 19.251H1.82L4.862 0h7.995c3.754 0 6.375 2.294 6.473 5.513-.648-.478-2.105-.86-3.722-.86m6.57 5.546c0 3.41-3.01 6.853-6.958 6.853h-2.493L11.595 24H6.74l1.845-11.538h3.592c4.208 0 7.346-3.634 7.153-6.949a5.24 5.24 0 0 1 2.848 4.686M9.653 5.546h6.408c.907 0 1.942.222 2.363.541-.195 2.741-2.655 5.483-6.441 5.483H8.714Z"/>
+              </svg>
+              Paypal
+            </a>
+            <a
+              href="https://ko-fi.com/tallescattarin"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-3 text-base font-semibold text-white rounded-xl bg-[#FF6433] hover:brightness-110 transition"
+            >
+              <svg class="size-6" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Ko-fi</title>
+                <path fill="white" d="M11.351 2.715c-2.7 0-4.986.025-6.83.26C2.078 3.285 0 5.154 0 8.61c0 3.506.182 6.13 1.585 8.493 1.584 2.701 4.233 4.182 7.662 4.182h.83c4.209 0 6.494-2.234 7.637-4a9.5 9.5 0 0 0 1.091-2.338C21.792 14.688 24 12.22 24 9.208v-.415c0-3.247-2.13-5.507-5.792-5.87-1.558-.156-2.65-.208-6.857-.208m0 1.947c4.208 0 5.09.052 6.571.182 2.624.311 4.13 1.584 4.13 4v.39c0 2.156-1.792 3.844-3.87 3.844h-.935l-.156.649c-.208 1.013-.597 1.818-1.039 2.546-.909 1.428-2.545 3.064-5.922 3.064h-.805c-2.571 0-4.831-.883-6.078-3.195-1.09-2-1.298-4.155-1.298-7.506 0-2.181.857-3.402 3.012-3.714 1.533-.233 3.559-.26 6.39-.26m6.547 2.287c-.416 0-.65.234-.65.546v2.935c0 .311.234.545.65.545 1.324 0 2.051-.754 2.051-2s-.727-2.026-2.052-2.026m-10.39.182c-1.818 0-3.013 1.48-3.013 3.142 0 1.533.858 2.857 1.949 3.897.727.701 1.87 1.429 2.649 1.896a1.47 1.47 0 0 0 1.507 0c.78-.467 1.922-1.195 2.623-1.896 1.117-1.039 1.974-2.364 1.974-3.897 0-1.662-1.247-3.142-3.039-3.142-1.065 0-1.792.545-2.338 1.298-.493-.753-1.246-1.298-2.312-1.298"/>
+              </svg>
+              Ko-Fi
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="py-8 px-4 border-t border-zinc-800 bg-zinc-900">
+        <div class="container mx-auto text-center">
+          <p>© 2025 Talles Cattarin - Music Producer & Sound Engineer 👊🏻🤘🏻</p>
+        </div>
+      </footer>
+
+      <script>
+        // Script para trocar a seta para baixo do hero por um 🤘🏻
+        const container = document.getElementById('toggleIcon');
+        const arrow = document.getElementById('arrowIcon');
+
+        let showingArrow = true;
+
+        setInterval(() => {
+          if (showingArrow) {
+            arrow.remove();
+            container.textContent = "🤘🏻";
+          } else {
+            container.textContent = "";
+            container.appendChild(arrow);
+          }
+          showingArrow = !showingArrow;
+        }, 3000);
+      </script>
+
+    </div>
+  </body>
+</html>
