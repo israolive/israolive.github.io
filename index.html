@@ -60,9 +60,24 @@
       </div>
 
       <!-- Arrow Down -->
-      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce p-1.5 text-rose-500 bg-zinc-900 rounded-full border border-zinc-800">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+      <div
+        id="toggleIcon"
+        class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce p-1.5 text-rose-500 bg-zinc-900 rounded-full border border-zinc-800 flex items-center justify-center"
+      >
+        <svg
+          id="arrowIcon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+          />
         </svg>
       </div>
     </section>
@@ -430,5 +445,24 @@
         <p>© 2025 Talles Cattarin - Music Producer & Sound Engineer 👊🏻🤘🏻</p>
       </div>
     </footer>
+
+    <script>
+      // Script para trocar a seta para baixo do hero por um 🤘🏻
+      const container = document.getElementById('toggleIcon');
+      const arrow = document.getElementById('arrowIcon');
+
+      let showingArrow = true;
+
+      setInterval(() => {
+        if (showingArrow) {
+          arrow.remove();
+          container.textContent = "🤘🏻";
+        } else {
+          container.textContent = "";
+          container.appendChild(arrow);
+        }
+        showingArrow = !showingArrow;
+      }, 3000);
+    </script>
   </body>
 </html>
